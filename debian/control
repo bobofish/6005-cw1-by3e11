@@ -1,15 +1,15 @@
-Source: package
-Section: unknown
-Priority: extra
-Maintainer: bobofish <by3e11@ecs.soton.ac.uk>
+Source: cw1-6005-by3e11
+Section: web
+Priority: optional
+Maintainer: Bo Yu <by3e11@soton.ac.uk>
 Build-Depends: debhelper (>= 7.0.50~)
 Standards-Version: 3.8.4
-Homepage: <insert the upstream URL, if relevant>
+Homepage: https://github.com/bobofish/6005_cw1_by3e11
 #Vcs-Git: git://git.debian.org/collab-maint/package.git
 #Vcs-Browser: http://git.debian.org/?p=collab-maint/package.git;a=summary
 
-Package: package
+Package: cw1-6005-by3e11
 Architecture: all
 Depends: ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: <RSS Reader>
+ This is the coursework of INFO6005 which is written by php using as RSS Reader.
