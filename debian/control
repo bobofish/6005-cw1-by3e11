@@ -11,3 +11,7 @@ Architecture: all
 Depends: ${misc:Depends},php5 (>=5)
 Description: <RSS Reader>
  This is the coursework of INFO6005 which is written by php using as RSS Reader.
+Author information:Bo Yu
+                   by3e11@ecs.soton.ac.uk
+                   MSc Web Technology
+                   University of Southampton
