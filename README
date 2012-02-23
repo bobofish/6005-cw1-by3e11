@@ -3,5 +3,39 @@ Author: Bo Yu
 	by3e11@ecs.soton.ac.uk
 	University of Southampton
 
-The package is for reading RSS, and the original PHP files are cloned from https://github.com.info6005/6005_cw1_2012
+The package is for reading RSS, which is the first part of INFO6005 coursework.
+
+The original PHP files are cloned from https://github.com.info6005/6005_cw1_2012
+
+The revision control repository: https://github.com/bobofish/6005-cw1-by3e11
+
+=================================================================================
+About the package:
+
+# This package is separated into three parts: 
+
+	Debian folder: the information about packaging configuration and system.
+	
+	Etc folder: program config information.
+
+	Usr forder: program files and commends reflect files.
+
+# Run:
+
+	First Step: Install,
+
+		    Input the commend '$ dpkg -i 6005-cw1-by3e11.deb', and waiting until process of installation complete.
+
+	Second Step: Run,
+     		     
+		    1. Open Applications, Accessories, then selcet 'Terminal'.
+
+		    2. Input the commend: '$ getnews', and click 'enter'.
+			
+		    3. Program will run successful!
+
+==================================================================================
+Copyright (C) 2012 Bo Yu <by3e11@ecs.soton.ac.uk>
+
+
 
