@@ -1,20 +1,15 @@
 This work was packaged for Debian by:
 
-    bobofish <by3e11@ecs.soton.ac.uk> on Wed, 22 Feb 2012 22:41:29 +0000
+    Bo Yu <by3e11@ecs.soton.ac.uk> on Wed, 22 Feb 2012 22:41:29 +0000
 
 It was downloaded from:
 
-    <url://example.com>
+    https://github.com/bobofish/6005_cw1_by3e11
 
-Upstream Author(s):
-
-    <put author's name and email here>
-    <likewise for another author>
 
 Copyright:
 
-    <Copyright (C) YYYY Firstname Lastname>
-    <likewise for another author>
+    Copyright (C) 2012 Bo YU <by3e11@ecs.soton.ac.uk>
 
 License:
 
@@ -36,7 +31,7 @@ Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".
 
 The Debian packaging is:
 
-    Copyright (C) 2012 bobofish <by3e11@ecs.soton.ac.uk>
+    Copyright (C) 2012 Bo Yu <by3e11@ecs.soton.ac.uk>
 
 # Please chose a license for your packaging work. If the program you package
 # uses a mainstream license, using the same license is the safest choice.
