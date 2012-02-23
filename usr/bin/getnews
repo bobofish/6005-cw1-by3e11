@@ -1,0 +1,3 @@
+#!/bin/bash
+# to make 6005-cw1-by3e11 as a command in line
+php/usr/share/6005-cw1-by3e11/index.php $@
