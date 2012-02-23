@@ -9,5 +9,56 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-%:
-	dh $@ 
+getnews = $(CURDIR)/usr/bin/getnews
+feeds = $(CURDIR)/etc/6005-cw1-by3e11/feeds.conf
+index = $(CURDIR)/usr/share/6005-cw1-by3e11/index.php
+rss = $(CURDIR)/usr/share/6005-cw1-by3e11/rss_php.php
+
+build:
+	dh_testdir
+	touch build
+       
+
+clean:
+	dh_testdir
+	dh_testroot
+	rm -f build
+	dh_clean
+
+install: build clean $(getnews) $(feeds) $(index) $(rss)
+	dh_testdir
+	dh_testroot
+	dh_prep
+	dh_installdirs
+
+	mkdir -m 755 -p $(CURDIR)/debian/6005-cw1-by3e11/usr/share/6005-cw1-by3e11
+	mkdir -m 755 -p $(CURDIR)/debian/6005-cw1-by3e11/usr/bin
+	mkdir -m 755 -p $(CURDIR)/debian/6005-cw1-by3e11/etc/6005-cw1-by3e11
+
+	install -m 644 $(index) $(CURDIR)/debian/6005-cw1-by3e11/usr/share/6005-cw1-by3e11
+	install -m 644 $(rss) $(CURDIR)/debian/6005-cw1-by3e11/usr/share/6005-cw1-by3e11
+	install -m 755 $(getnews) $(CURDIR)/debian/6005-cw1-by3e11/usr/bin
+	install -m 644 $(feeds) $(CURDIR)/debian/6005-cw1-by3e11/etc/6005-cw1-by3e11
+
+# Build architecture-independent files here.
+binary-indep: build install
+	
+
+# Build architecture-dependent files here.
+binary-arch: build install
+	dh_testdir
+	dh_testroot
+	dh_installchangelogs
+	dh_installdocs
+	dh_installexamples
+	dh_installdebconf
+	dh_installman
+	dh_link
+	dh_compress
+	dh_fixperms
+	dh_installdeb
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+binary: binary-arch binary-indep
+.PHONY: build clean binary-indep binary-arch binary install
