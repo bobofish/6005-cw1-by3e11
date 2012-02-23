@@ -1,3 +1,7 @@
+6005-cw1-by3e11 (1.0.2) unstable; urgency=low
+  * Modify the incorrect in the getnews.
+ -- Bo Yu <by3e11@ecs.soton.ac.uk>  Thu, 23 Feb 2012 11:55:53 +0000
+
 6005-cw1-by3e11 (1.0.1) unstable; urgency=low
   * The package is ready for installed.
  -- Bo Yu <by3e11@ecs.soton.ac.uk>  Thu, 23 Feb 2012 11:46:21 +0000
